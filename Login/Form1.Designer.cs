@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,25 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ImagePictureBox = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.SalirButton = new System.Windows.Forms.Button();
-            this.EntrarButton = new System.Windows.Forms.Button();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.IDTextBox = new System.Windows.Forms.TextBox();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.IDLabel = new System.Windows.Forms.Label();
+            this.ImagePictureBox = new System.Windows.Forms.PictureBox();
+            this.StarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ImagePictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ImagePictureBox
-            // 
-            this.ImagePictureBox.Location = new System.Drawing.Point(243, 66);
-            this.ImagePictureBox.Name = "ImagePictureBox";
-            this.ImagePictureBox.Size = new System.Drawing.Size(128, 128);
-            this.ImagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.ImagePictureBox.TabIndex = 15;
-            this.ImagePictureBox.TabStop = false;
             // 
             // SalirButton
             // 
@@ -56,15 +48,6 @@
             this.SalirButton.TabIndex = 14;
             this.SalirButton.Text = "Salir";
             this.SalirButton.UseVisualStyleBackColor = true;
-            // 
-            // EntrarButton
-            // 
-            this.EntrarButton.Location = new System.Drawing.Point(110, 237);
-            this.EntrarButton.Name = "EntrarButton";
-            this.EntrarButton.Size = new System.Drawing.Size(75, 23);
-            this.EntrarButton.TabIndex = 13;
-            this.EntrarButton.Text = "Entrar";
-            this.EntrarButton.UseVisualStyleBackColor = true;
             // 
             // LoginLabel
             // 
@@ -110,22 +93,46 @@
             this.IDLabel.Size = new System.Drawing.Size(27, 24);
             this.IDLabel.TabIndex = 8;
             this.IDLabel.Text = "ID";
+            this.IDLabel.Click += new System.EventHandler(this.IDLabel_Click);
             // 
-            // Form1
+            // ImagePictureBox
+            // 
+            this.ImagePictureBox.Image = global::Login.Properties.Resources._128x128Usuarios;
+            this.ImagePictureBox.Location = new System.Drawing.Point(243, 66);
+            this.ImagePictureBox.Name = "ImagePictureBox";
+            this.ImagePictureBox.Size = new System.Drawing.Size(128, 128);
+            this.ImagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ImagePictureBox.TabIndex = 15;
+            this.ImagePictureBox.TabStop = false;
+            // 
+            // StarButton
+            // 
+            this.StarButton.Location = new System.Drawing.Point(110, 237);
+            this.StarButton.Name = "StarButton";
+            this.StarButton.Size = new System.Drawing.Size(75, 23);
+            this.StarButton.TabIndex = 13;
+            this.StarButton.Text = "Entrar";
+            this.StarButton.UseVisualStyleBackColor = true;
+            this.StarButton.Click += new System.EventHandler(this.EntrarButton_Click);
+            // 
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 304);
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ClientSize = new System.Drawing.Size(434, 311);
             this.Controls.Add(this.ImagePictureBox);
             this.Controls.Add(this.SalirButton);
-            this.Controls.Add(this.EntrarButton);
+            this.Controls.Add(this.StarButton);
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.IDTextBox);
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.IDLabel);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(500, 400);
+            this.Name = "LoginForm";
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.ImagePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -136,7 +143,7 @@
 
         private System.Windows.Forms.PictureBox ImagePictureBox;
         private System.Windows.Forms.Button SalirButton;
-        private System.Windows.Forms.Button EntrarButton;
+        private System.Windows.Forms.Button StarButton;
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.TextBox IDTextBox;
