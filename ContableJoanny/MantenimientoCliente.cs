@@ -25,7 +25,7 @@ namespace ContableJoanny
             {
                 string data = string.Format("Exec  ActulizaClientes '{0}', '{1}' , '{2}' ", idCliTextBox.Text.Trim(), NomCliTextBox.Text.Trim(), ApeCliTextBox.Text.Trim());
                 Conexion.Con(data);
-                MessageBox.Show("se guardo con satisfacion");
+                MessageBox.Show("Se guardó con satisfación");
 
             }
 
@@ -33,6 +33,20 @@ namespace ContableJoanny
             {
 
                 MessageBox.Show("Sin guardar", ex.Message);
+            }
+        }
+
+        private void EliminarButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string data = string.Format("Exce EliminarArticulos '{0}' ", idCliTextBox.Text.Trim());
+                Conexion.Con(data);
+                MessageBox.Show("Se eliminó con satisfación");
+            }
+            catch ( Exception ex)
+            {
+                MessageBox.Show("No se pudo eliminar");
             }
         }
     }
