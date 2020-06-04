@@ -12,6 +12,8 @@ namespace ContableJoanny
 {
     public partial class User : Form
     {
+        Conexion Conexion = new Conexion();
+
         public User()
         {
             InitializeComponent();
@@ -25,6 +27,13 @@ namespace ContableJoanny
 
         private void UsuarioForm_Load(object sender, EventArgs e)
         {
+            string cmd = "select * from Usuarios where IdUsuario =" + LoginForm.codigo;
+
+            DataSet ds = Conexion.Con(cmd);
+
+            AdminLabel.Text = ds.Tables[0].Rows[0]["NombreUsuario"].ToString().Trim();
+            UserLabel.Text = ds.Tables[0].Rows[0]["Account"].ToString().Trim();
+            CodigoLabel.Text = ds.Tables[0].Rows[0]["IdUsuario"].ToString().Trim();
 
         }
     }

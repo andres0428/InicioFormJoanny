@@ -35,7 +35,7 @@ namespace ContableJoanny
                 string strin = string.Format("select * from Usuarios where Account = '{0}' and Password = '{1}' ", IDTextBox.Text.Trim(), PasswordTextBox.Text.Trim());
                 DataSet DS = conexion.Con(strin);
 
-                codigo = DS.Tables[].Rows[].
+                codigo = DS.Tables[0].Rows[0]["IdUsuario"].ToString().Trim();
 
                 string account = DS.Tables[0].Rows[0]["Account"].ToString().Trim();
                 string contraseña = DS.Tables[0].Rows[0]["Password"].ToString().Trim();

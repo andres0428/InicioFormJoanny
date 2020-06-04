@@ -28,6 +28,33 @@ namespace ContableJoanny
 
         private void Admin_Load(object sender, EventArgs e)
         {
+            string cmd = "select * from Usuarios where IdUsuario =" + LoginForm.codigo;
+          
+            DataSet ds = Conexion.Con(cmd);
+
+            AdminLabel.Text = ds.Tables[0].Rows[0]["NombreUsuario"].ToString().Trim();
+            UserLabel.Text = ds.Tables[0].Rows[0]["Account"].ToString().Trim();
+            CodigoLabel.Text = ds.Tables[0].Rows[0]["IdUsuario"].ToString().Trim();
+
+        }
+
+        private void ContenedorPrincipalButton_Click(object sender, EventArgs e)
+        {
+            ContenedorPrincipal contenedor = new ContenedorPrincipal();
+            this.Hide();
+            contenedor.Show();
+
+        }
+
+        private void AdminUsuariosButton_Click(object sender, EventArgs e)
+        {
+            string cmd = "select * from Usuarios where IdUsuario =" + LoginForm.codigo;
+
+            DataSet ds = Conexion.Con(cmd);
+
+            AdminLabel.Text = ds.Tables[0].Rows[0]["NombreUsuario"].ToString().Trim();
+            UserLabel.Text = ds.Tables[0].Rows[0]["Account"].ToString().Trim();
+            CodigoLabel.Text = ds.Tables[0].Rows[0]["IdUsuario"].ToString().Trim();
 
         }
     }

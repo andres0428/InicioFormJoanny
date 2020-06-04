@@ -53,11 +53,41 @@
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="ConsultaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaClientes.Designer.cs">
+      <DependentUpon>ConsultaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProductos.Designer.cs">
+      <DependentUpon>ConsultaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContenedorPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContenedorPrincipal.Designer.cs">
+      <DependentUpon>ContenedorPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCliente.Designer.cs">
+      <DependentUpon>MantenimientoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoProductos.Designer.cs">
+      <DependentUpon>MantenimientoProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,8 +100,23 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaClientes.resx">
+      <DependentUpon>ConsultaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProductos.resx">
+      <DependentUpon>ConsultaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContenedorPrincipal.resx">
+      <DependentUpon>ContenedorPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoCliente.resx">
+      <DependentUpon>MantenimientoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoProductos.resx">
+      <DependentUpon>MantenimientoProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
