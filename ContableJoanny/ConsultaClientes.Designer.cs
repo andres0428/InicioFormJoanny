@@ -90,6 +90,7 @@
             this.SalirButton.TabIndex = 11;
             this.SalirButton.Text = "Salir";
             this.SalirButton.UseVisualStyleBackColor = true;
+            this.SalirButton.Click += new System.EventHandler(this.SalirButton_Click);
             // 
             // dataGridView1
             // 

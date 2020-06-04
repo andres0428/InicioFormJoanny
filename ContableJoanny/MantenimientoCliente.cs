@@ -49,5 +49,10 @@ namespace ContableJoanny
                 MessageBox.Show("No se pudo eliminar");
             }
         }
+
+        private void SalirBbutton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

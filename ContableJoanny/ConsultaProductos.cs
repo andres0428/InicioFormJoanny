@@ -16,5 +16,10 @@ namespace ContableJoanny
         {
             InitializeComponent();
         }
+
+        private void SalirButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

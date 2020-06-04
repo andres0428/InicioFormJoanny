@@ -97,6 +97,7 @@
             this.SalirBbutton.TabIndex = 31;
             this.SalirBbutton.Text = "SalirButton";
             this.SalirBbutton.UseVisualStyleBackColor = true;
+            this.SalirBbutton.Click += new System.EventHandler(this.SalirBbutton_Click);
             // 
             // NuevoButton
             // 
