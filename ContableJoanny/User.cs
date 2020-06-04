@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace ContableJoanny
 {
-    public partial class Form1 : Form
+    public partial class User : Form
     {
-        public Form1()
+        public User()
         {
             InitializeComponent();
+        }
+
+        private void SalirButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+        private void UsuarioForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
