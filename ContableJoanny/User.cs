@@ -32,9 +32,11 @@ namespace ContableJoanny
             DataSet ds = Conexion.Con(cmd);
 
             AdminLabel.Text = ds.Tables[0].Rows[0]["NombreUsuario"].ToString().Trim();
-            UserLabel.Text = ds.Tables[0].Rows[0]["Account"].ToString().Trim();
+            UserLaber.Text = ds.Tables[0].Rows[0]["Account"].ToString().Trim();
             CodigoLabel.Text = ds.Tables[0].Rows[0]["IdUsuario"].ToString().Trim();
 
         }
+
+       
     }
 }

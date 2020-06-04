@@ -22,7 +22,7 @@ namespace ContableJoanny
         {
             try
             {
-                string data = string.Format("Exec  ActulizaArticulos '{0}', '{1}' , '{2}' ", idProTextBox.Text.Trim(), NomProTextBox.Text.Trim(), PrecioTextBox.Text.Trim());
+                string data = string.Format("Exec  ActualizaArticulos '{0}', '{1}' , '{2}' ", idProTextBox.Text.Trim(), NomProTextBox.Text.Trim(), PrecioTextBox.Text.Trim());
                 Conexion.Con(data);
                 MessageBox.Show("Se guardó con satisfación");
 
@@ -40,7 +40,7 @@ namespace ContableJoanny
         {
             try
             {
-                string data = string.Format("Exce EliminarArticulos '{0}' ", idProTextBox.Text.Trim());
+                string data = string.Format("Exec EliminarArticulos '{0}' ", idProTextBox.Text.Trim());
                 Conexion.Con(data);
                 MessageBox.Show("Se guardó con satisfación");
             }
@@ -55,6 +55,11 @@ namespace ContableJoanny
         private void SalirBbutton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void MantenimientoProductos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

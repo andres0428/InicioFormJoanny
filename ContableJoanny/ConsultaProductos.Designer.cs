@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaProductos));
             this.BuscarButton = new System.Windows.Forms.Button();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -111,6 +112,7 @@
             this.Controls.Add(this.SalirButton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ImprimirButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultaProductos";
             this.Text = "ConsultaProductos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

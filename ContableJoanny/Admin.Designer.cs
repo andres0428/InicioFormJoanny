@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
-            this.label1 = new System.Windows.Forms.Label();
-            this.UserLabel = new System.Windows.Forms.Label();
             this.AdminLabel = new System.Windows.Forms.Label();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.UserLabel = new System.Windows.Forms.Label();
             this.CodigoLabel = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.ContenedorPrincipalButton = new System.Windows.Forms.Button();
             this.CambiarContraseñaButton = new System.Windows.Forms.Button();
             this.CerrarSesionButton = new System.Windows.Forms.Button();
@@ -44,56 +44,56 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // AdminLabel
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(180, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 0;
+            this.AdminLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AdminLabel.Location = new System.Drawing.Point(180, 56);
+            this.AdminLabel.Name = "AdminLabel";
+            this.AdminLabel.Size = new System.Drawing.Size(100, 23);
+            this.AdminLabel.TabIndex = 0;
+            // 
+            // Label2
+            // 
+            this.Label2.AutoSize = true;
+            this.Label2.Location = new System.Drawing.Point(32, 112);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(29, 13);
+            this.Label2.TabIndex = 1;
+            this.Label2.Text = "User";
+            // 
+            // Label1
+            // 
+            this.Label1.AutoSize = true;
+            this.Label1.Location = new System.Drawing.Point(32, 56);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(36, 13);
+            this.Label1.TabIndex = 2;
+            this.Label1.Text = "Admin";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 168);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Codigo";
             // 
             // UserLabel
             // 
-            this.UserLabel.AutoSize = true;
-            this.UserLabel.Location = new System.Drawing.Point(32, 112);
+            this.UserLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.UserLabel.Location = new System.Drawing.Point(180, 110);
             this.UserLabel.Name = "UserLabel";
-            this.UserLabel.Size = new System.Drawing.Size(29, 13);
-            this.UserLabel.TabIndex = 1;
-            this.UserLabel.Text = "User";
-            // 
-            // AdminLabel
-            // 
-            this.AdminLabel.AutoSize = true;
-            this.AdminLabel.Location = new System.Drawing.Point(32, 56);
-            this.AdminLabel.Name = "AdminLabel";
-            this.AdminLabel.Size = new System.Drawing.Size(36, 13);
-            this.AdminLabel.TabIndex = 2;
-            this.AdminLabel.Text = "Admin";
+            this.UserLabel.Size = new System.Drawing.Size(100, 23);
+            this.UserLabel.TabIndex = 4;
             // 
             // CodigoLabel
             // 
-            this.CodigoLabel.AutoSize = true;
-            this.CodigoLabel.Location = new System.Drawing.Point(32, 168);
+            this.CodigoLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CodigoLabel.Location = new System.Drawing.Point(180, 164);
             this.CodigoLabel.Name = "CodigoLabel";
-            this.CodigoLabel.Size = new System.Drawing.Size(40, 13);
-            this.CodigoLabel.TabIndex = 3;
-            this.CodigoLabel.Text = "Codigo";
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label5.Location = new System.Drawing.Point(180, 110);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 23);
-            this.label5.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label6.Location = new System.Drawing.Point(180, 164);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 23);
-            this.label6.TabIndex = 5;
+            this.CodigoLabel.Size = new System.Drawing.Size(100, 23);
+            this.CodigoLabel.TabIndex = 5;
             // 
             // ContenedorPrincipalButton
             // 
@@ -162,12 +162,12 @@
             this.Controls.Add(this.CerrarSesionButton);
             this.Controls.Add(this.CambiarContraseñaButton);
             this.Controls.Add(this.ContenedorPrincipalButton);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.CodigoLabel);
-            this.Controls.Add(this.AdminLabel);
             this.Controls.Add(this.UserLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Label1);
+            this.Controls.Add(this.Label2);
+            this.Controls.Add(this.AdminLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Admin";
             this.Text = "Admin";
@@ -180,12 +180,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label UserLabel;
         private System.Windows.Forms.Label AdminLabel;
+        private System.Windows.Forms.Label Label2;
+        private System.Windows.Forms.Label Label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label UserLabel;
         private System.Windows.Forms.Label CodigoLabel;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button ContenedorPrincipalButton;
         private System.Windows.Forms.Button CambiarContraseñaButton;
         private System.Windows.Forms.Button CerrarSesionButton;

@@ -40,13 +40,13 @@ namespace ContableJoanny
         {
             try
             {
-                string data = string.Format("Exce EliminarArticulos '{0}' ", idCliTextBox.Text.Trim());
+                string data = string.Format("Exec EliminarArticulos '{0}' ", idCliTextBox.Text.Trim());
                 Conexion.Con(data);
                 MessageBox.Show("Se eliminó con satisfación");
             }
             catch ( Exception ex)
             {
-                MessageBox.Show("No se pudo eliminar");
+                MessageBox.Show("No se pudo eliminar", ex.Message);
             }
         }
 

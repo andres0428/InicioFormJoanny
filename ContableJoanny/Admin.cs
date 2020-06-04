@@ -35,7 +35,6 @@ namespace ContableJoanny
             AdminLabel.Text = ds.Tables[0].Rows[0]["NombreUsuario"].ToString().Trim();
             UserLabel.Text = ds.Tables[0].Rows[0]["Account"].ToString().Trim();
             CodigoLabel.Text = ds.Tables[0].Rows[0]["IdUsuario"].ToString().Trim();
-
         }
 
         private void ContenedorPrincipalButton_Click(object sender, EventArgs e)
@@ -52,9 +51,9 @@ namespace ContableJoanny
 
             DataSet ds = Conexion.Con(cmd);
 
-            AdminLabel.Text = ds.Tables[0].Rows[0]["NombreUsuario"].ToString().Trim();
-            UserLabel.Text = ds.Tables[0].Rows[0]["Account"].ToString().Trim();
-            CodigoLabel.Text = ds.Tables[0].Rows[0]["IdUsuario"].ToString().Trim();
+            Label1.Text = ds.Tables[0].Rows[0]["NombreUsuario"].ToString().Trim();
+            Label2.Text = ds.Tables[0].Rows[0]["Account"].ToString().Trim();
+            label3.Text = ds.Tables[0].Rows[0]["IdUsuario"].ToString().Trim();
 
         }
     }
