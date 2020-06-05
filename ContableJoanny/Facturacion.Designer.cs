@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Facturacion));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,12 +47,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.ColocarButton = new System.Windows.Forms.Button();
+            this.EliminarButton = new System.Windows.Forms.Button();
+            this.ClientesButton = new System.Windows.Forms.Button();
+            this.ProductosButton = new System.Windows.Forms.Button();
+            this.FacturaButton = new System.Windows.Forms.Button();
+            this.SalirButton = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.TotalLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -205,59 +206,59 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Importe";
             // 
-            // button1
+            // ColocarButton
             // 
-            this.button1.Location = new System.Drawing.Point(515, 173);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ColocarButton.Location = new System.Drawing.Point(515, 173);
+            this.ColocarButton.Name = "ColocarButton";
+            this.ColocarButton.Size = new System.Drawing.Size(75, 23);
+            this.ColocarButton.TabIndex = 18;
+            this.ColocarButton.Text = "Colocar";
+            this.ColocarButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // EliminarButton
             // 
-            this.button2.Location = new System.Drawing.Point(515, 211);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.EliminarButton.Location = new System.Drawing.Point(515, 211);
+            this.EliminarButton.Name = "EliminarButton";
+            this.EliminarButton.Size = new System.Drawing.Size(75, 23);
+            this.EliminarButton.TabIndex = 19;
+            this.EliminarButton.Text = "Eliminar";
+            this.EliminarButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // ClientesButton
             // 
-            this.button3.Location = new System.Drawing.Point(515, 249);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.ClientesButton.Location = new System.Drawing.Point(515, 249);
+            this.ClientesButton.Name = "ClientesButton";
+            this.ClientesButton.Size = new System.Drawing.Size(75, 23);
+            this.ClientesButton.TabIndex = 20;
+            this.ClientesButton.Text = "Clientes";
+            this.ClientesButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // ProductosButton
             // 
-            this.button4.Location = new System.Drawing.Point(515, 287);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ProductosButton.Location = new System.Drawing.Point(515, 287);
+            this.ProductosButton.Name = "ProductosButton";
+            this.ProductosButton.Size = new System.Drawing.Size(75, 23);
+            this.ProductosButton.TabIndex = 21;
+            this.ProductosButton.Text = "Productos";
+            this.ProductosButton.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // FacturaButton
             // 
-            this.button5.Location = new System.Drawing.Point(515, 325);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 22;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.FacturaButton.Location = new System.Drawing.Point(515, 325);
+            this.FacturaButton.Name = "FacturaButton";
+            this.FacturaButton.Size = new System.Drawing.Size(75, 23);
+            this.FacturaButton.TabIndex = 22;
+            this.FacturaButton.Text = "Factura";
+            this.FacturaButton.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // SalirButton
             // 
-            this.button6.Location = new System.Drawing.Point(515, 363);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 23;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.SalirButton.Location = new System.Drawing.Point(515, 363);
+            this.SalirButton.Name = "SalirButton";
+            this.SalirButton.Size = new System.Drawing.Size(75, 23);
+            this.SalirButton.TabIndex = 23;
+            this.SalirButton.Text = "Salir";
+            this.SalirButton.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -283,12 +284,12 @@
             this.ClientSize = new System.Drawing.Size(616, 437);
             this.Controls.Add(this.TotalLabel);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SalirButton);
+            this.Controls.Add(this.FacturaButton);
+            this.Controls.Add(this.ProductosButton);
+            this.Controls.Add(this.ClientesButton);
+            this.Controls.Add(this.EliminarButton);
+            this.Controls.Add(this.ColocarButton);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -307,6 +308,7 @@
             this.Controls.Add(this.PrecioTextBox);
             this.Controls.Add(this.DescripcionTextBox);
             this.Controls.Add(this.CodigoTextBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Facturacion";
             this.Text = "Facturacion";
             this.Load += new System.EventHandler(this.Facturacion_Load);
@@ -337,12 +339,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button ColocarButton;
+        private System.Windows.Forms.Button EliminarButton;
+        private System.Windows.Forms.Button ClientesButton;
+        private System.Windows.Forms.Button ProductosButton;
+        private System.Windows.Forms.Button FacturaButton;
+        private System.Windows.Forms.Button SalirButton;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label TotalLabel;
     }
