@@ -87,7 +87,7 @@
             // 
             // LeAtiendeLabel
             // 
-            this.LeAtiendeLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.LeAtiendeLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LeAtiendeLabel.Location = new System.Drawing.Point(112, 16);
             this.LeAtiendeLabel.Name = "LeAtiendeLabel";
             this.LeAtiendeLabel.Size = new System.Drawing.Size(130, 23);
@@ -270,7 +270,7 @@
             // 
             // TotalLabel
             // 
-            this.TotalLabel.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TotalLabel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.TotalLabel.Location = new System.Drawing.Point(376, 398);
             this.TotalLabel.Name = "TotalLabel";
             this.TotalLabel.Size = new System.Drawing.Size(100, 23);
@@ -309,6 +309,7 @@
             this.Controls.Add(this.CodigoTextBox2);
             this.Name = "Facturacion";
             this.Text = "Facturacion";
+            this.Load += new System.EventHandler(this.Facturacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
