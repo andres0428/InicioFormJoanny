@@ -13,6 +13,7 @@ namespace ContableJoanny
     public partial class MantenimientoCliente : Form
     {
         Conexion Conexion = new Conexion();
+
         public MantenimientoCliente()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace ContableJoanny
 
             try
             {
-                string data = string.Format("Exec  ActulizaClientes '{0}', '{1}' , '{2}' ", idCliTextBox.Text.Trim(), NomCliTextBox.Text.Trim(), ApeCliTextBox.Text.Trim());
+                string data = string.Format("Exec  ActualizaClientes '{0}', '{1}' , '{2}' ", idCliTextBox.Text.Trim(), NomCliTextBox.Text.Trim(), ApeCliTexBox.Text.Trim());
                 Conexion.Con(data);
                 MessageBox.Show("Se guardó con satisfación");
 
@@ -40,7 +41,7 @@ namespace ContableJoanny
         {
             try
             {
-                string data = string.Format("Exec EliminarArticulos '{0}' ", idCliTextBox.Text.Trim());
+                string data = string.Format("Exec EliminarClientes '{0}' ", idCliTextBox.Text.Trim());
                 Conexion.Con(data);
                 MessageBox.Show("Se eliminó con satisfación");
             }
@@ -53,6 +54,11 @@ namespace ContableJoanny
         private void SalirBbutton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void MantenimientoCliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

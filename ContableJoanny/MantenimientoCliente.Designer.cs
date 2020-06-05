@@ -32,7 +32,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ApeCliTextBox = new System.Windows.Forms.TextBox();
             this.NomCliTextBox = new System.Windows.Forms.TextBox();
             this.idCliTextBox = new System.Windows.Forms.TextBox();
             this.SalirBbutton = new System.Windows.Forms.Button();
@@ -40,12 +39,13 @@
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.ConsultarButton = new System.Windows.Forms.Button();
+            this.ApeCliTexBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 96);
+            this.label3.Location = new System.Drawing.Point(10, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 26;
@@ -54,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 65);
+            this.label2.Location = new System.Drawing.Point(10, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 25;
@@ -69,16 +69,9 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Id_cli";
             // 
-            // ApeCliTextBox
-            // 
-            this.ApeCliTextBox.Location = new System.Drawing.Point(79, 108);
-            this.ApeCliTextBox.Name = "ApeCliTextBox";
-            this.ApeCliTextBox.Size = new System.Drawing.Size(114, 20);
-            this.ApeCliTextBox.TabIndex = 23;
-            // 
             // NomCliTextBox
             // 
-            this.NomCliTextBox.Location = new System.Drawing.Point(79, 64);
+            this.NomCliTextBox.Location = new System.Drawing.Point(79, 63);
             this.NomCliTextBox.Name = "NomCliTextBox";
             this.NomCliTextBox.Size = new System.Drawing.Size(114, 20);
             this.NomCliTextBox.TabIndex = 22;
@@ -138,15 +131,22 @@
             this.ConsultarButton.Text = "Colsultar";
             this.ConsultarButton.UseVisualStyleBackColor = true;
             // 
+            // ApeCliTexBox
+            // 
+            this.ApeCliTexBox.Location = new System.Drawing.Point(79, 107);
+            this.ApeCliTexBox.Name = "ApeCliTexBox";
+            this.ApeCliTexBox.Size = new System.Drawing.Size(114, 20);
+            this.ApeCliTexBox.TabIndex = 27;
+            // 
             // MantenimientoCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 231);
+            this.Controls.Add(this.ApeCliTexBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ApeCliTextBox);
             this.Controls.Add(this.NomCliTextBox);
             this.Controls.Add(this.idCliTextBox);
             this.Controls.Add(this.SalirBbutton);
@@ -157,6 +157,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MantenimientoCliente";
             this.Text = "MantenimientoCliente";
+            this.Load += new System.EventHandler(this.MantenimientoCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,7 +168,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox ApeCliTextBox;
         private System.Windows.Forms.TextBox NomCliTextBox;
         private System.Windows.Forms.TextBox idCliTextBox;
         private System.Windows.Forms.Button SalirBbutton;
@@ -175,5 +175,6 @@
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button ConsultarButton;
+        private System.Windows.Forms.TextBox ApeCliTexBox;
     }
 }

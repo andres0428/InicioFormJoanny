@@ -115,6 +115,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultaProductos";
             this.Text = "ConsultaProductos";
+            this.Load += new System.EventHandler(this.ConsultaProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

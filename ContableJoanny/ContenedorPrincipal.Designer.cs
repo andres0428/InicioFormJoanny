@@ -250,8 +250,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "ContenedorPrincipal";
-            this.Text = "ContenedorPrincipal";
-            this.Load += new System.EventHandler(this.ContenedorPrincipal_Load);
+            this.Text = "ContenedorPrincipal";       
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.toolStrip.ResumeLayout(false);

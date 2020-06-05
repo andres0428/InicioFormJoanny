@@ -99,7 +99,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(30, 107);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(470, 149);
-            this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.TabIndex = 10;           
             // 
             // ImprimirButton
             // 
@@ -126,6 +126,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultaClientes";
             this.Text = "ConsultaClientes";
+            this.Load += new System.EventHandler(this.ConsultaClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

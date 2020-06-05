@@ -97,10 +97,7 @@ namespace ContableJoanny
             }
         }
 
-        private void ContenedorPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
         {

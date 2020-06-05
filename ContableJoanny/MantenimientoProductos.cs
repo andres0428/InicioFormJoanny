@@ -42,7 +42,7 @@ namespace ContableJoanny
             {
                 string data = string.Format("Exec EliminarArticulos '{0}' ", idProTextBox.Text.Trim());
                 Conexion.Con(data);
-                MessageBox.Show("Se guardó con satisfación");
+                MessageBox.Show("Se eliminó con satisfación");
             }
             catch (Exception ex)
             {
