@@ -37,5 +37,25 @@ namespace ContableJoanny
             dataGridView1.DataSource = llenarDataGridView("Articulo").Tables[0];
 
         }
+
+        private void BuscarButton_Click(object sender, EventArgs e)
+        {
+
+            if (string.IsNullOrEmpty(NombreTextBox.Text.Trim()) == false)
+            {
+                try
+                {
+                    string buscar = string.Format("select * from Articulo where NombreProducto like ('%" + NombreTextBox.Text + "%')");
+                    DataSet ds = Conexion.Con(buscar);
+                    dataGridView1.DataSource = ds.Tables[0];
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Error", ex.Message);
+                }
+
+            }
+        }
     }
 }

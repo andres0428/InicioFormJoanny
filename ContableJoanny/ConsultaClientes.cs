@@ -39,5 +39,24 @@ namespace ContableJoanny
             Application.Exit();
         }
 
+        private void BuscarButton_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(NombreTextBox.Text.Trim()) == false)
+            {
+                try
+                {
+                    string data = string.Format("select * from Clientes where NombreCliente like ('%" + NombreTextBox.Text + "%')");
+                    DataSet DS;                   
+                    DS = Conexion.Con(data);
+                    dataGridView1.DataSource = DS.Tables[0];
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Error",ex.Message);
+                }
+
+            }
+        }
     }
 }

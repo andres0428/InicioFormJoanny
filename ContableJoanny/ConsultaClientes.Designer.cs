@@ -57,6 +57,7 @@
             this.BuscarButton.TabIndex = 15;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // NombreTextBox
             // 
@@ -99,7 +100,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(30, 107);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(470, 149);
-            this.dataGridView1.TabIndex = 10;           
+            this.dataGridView1.TabIndex = 10;
             // 
             // ImprimirButton
             // 

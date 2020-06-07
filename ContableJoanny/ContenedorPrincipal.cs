@@ -127,6 +127,16 @@ namespace ContableJoanny
             consultas.Show();
         }
 
-      
+        private void ContenedorPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facturacion facturacion = new Facturacion();
+            facturacion.MdiParent = this;
+            facturacion.Show();
+        }
     }
 }

@@ -47,6 +47,7 @@
             this.BuscarButton.TabIndex = 21;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // NombreTextBox
             // 
